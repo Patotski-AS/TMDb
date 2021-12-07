@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TMDb</string>
+    <string name="Description_image_no_internet">Изображение, если нет подключения к Интернету</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="no_info">нет информации</string>
+    <string name="title_movie">Фильмы</string>
+    <string name="title_favorites">Избранное</string>
+    <string name="title_settings">Настройки</string>
+    <string name="title_celebrities">Знаменитости</string>
+    <!--    genre-->
+    <string name="genre_action">боевик</string>
+    <string name="genre_adventure">приключения</string>
+    <string name="genre_animation">мультфильм</string>
+    <string name="genre_comedy">комедия</string>
+    <string name="genre_crime">криминал</string>
+    <string name="genre_documentary">документальный</string>
+    <string name="genre_drama">драма</string>
+    <string name="genre_family">семейный</string>
+    <string name="genre_fantasy">фэнтези</string>
+    <string name="genre_history">история</string>
+    <string name="genre_horror">ужасы</string>
+    <string name="genre_music">музыка</string>
+    <string name="genre_mystery">детектив</string>
+    <string name="genre_romance">мелодрама</string>
+    <string name="genre_science_fiction">фантастика</string>
+    <string name="genre_tv_movie">ТВ фильм</string>
+    <string name="genre_thriller">триллер</string>
+    <string name="genre_war">военный</string>
+    <string name="genre_western">вестерн</string>
+    <string name="text_average">/10</string>
+    <string name="search_hint">Поиск</string>
+    <!-- Preference Titles -->
+    <string name="title_preference_sort">Сортировка</string>
+    <string name="title_preference_theme">Тема</string>
+    <string name="title_parameters_sort">Параметры сортировки</string>
+    <!-- Preference Vales -->
+    <string name="value_day_theme">Светлая</string>
+    <string name="value_night_theme">Темная</string>
+    <string name="no_internet">отсутствует интернет соединение</string>
+    <string name="title_name">Название:</string>
+    <string name="title_genre">Жанр:</string>
+    <string name="title_release_date">Дата релиза:</string>
+    <string name="title_vote_average">Рейтинг:</string>
+    <string name="default_value_overview">Описание</string>
+    <string name="movie_poster">Постер фильма</string>
+    <string name="default_text_title">title</string>
+    <string name="default_text_date">0000</string>
+    <string name="default_text_average">0.0/10</string>
+    <string name="default_text_genre">genre</string>
+    <string name="text_retry_button">Обновить</string>
+    <string name="subtitle_favorite_movies">Избранные фильмы</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Preference -->
+    <string-array name="sort">
+        <item>Popularity</item>
+        <item>Release date</item>
+        <item>Vote average</item>
+        <item>Vote count</item>
+    </string-array>
+
+    <string-array name="sort_values">
+        <item>popularity.desc</item>
+        <item>release_date.desc</item>
+        <item>vote_average.desc</item>
+        <item>vote_count.desc</item>
+    </string-array>
+
+</resources>

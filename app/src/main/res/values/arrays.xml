@@ -1,0 +1,27 @@
+<resources>
+    <!-- Preference -->
+    <string-array name="sort">
+        <item>Popularity</item>
+        <item>Release date</item>
+        <item>Vote average</item>
+        <item>Vote count</item>
+    </string-array>
+
+    <string-array name="sort_values">
+        <item>popularity.desc</item>
+        <item>release_date.desc</item>
+        <item>vote_average.desc</item>
+        <item>vote_count.desc</item>
+    </string-array>
+    <!-- Reply Preference -->
+<!--    <string-array name="reply_entries">-->
+<!--        <item>Reply</item>-->
+<!--        <item>Reply to all</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="reply_values">-->
+<!--        <item>reply</item>-->
+<!--        <item>reply_all</item>-->
+<!--    </string-array>-->
+
+</resources>

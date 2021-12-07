@@ -1,0 +1,63 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        kotlin_version = "1.5.31"
+        gradle_version = "7.0.3"
+        nav_version = "2.3.5"
+        hilt_version = '2.40.3'
+        retrofit2_version = "2.9.0"
+        okhttp3_version = '5.0.0-alpha.2'
+        version_moshi = "1.12.0"
+        version_glide = "4.12.0"
+        room_version = "2.3.0"
+        paging_version = "3.1.0"
+        detekt_version = "1.18.1"
+        ktlint_version = "9.2.1"
+        lifecycle_version = "2.4.0-alpha01@aar"
+        hamcrestVersion = '1.3'
+    }
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:$gradle_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.0"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
+    }
+}
+
+plugins {
+    id "io.gitlab.arturbosch.detekt" version "$detekt_version"
+    id "org.jlleitschuh.gradle.ktlint" version "$ktlint_version"
+}
+
+subprojects {
+    apply plugin: "org.jlleitschuh.gradle.ktlint"
+    ktlint {
+        debug.set(false)
+    }
+}
+
+detekt {
+    toolVersion = "$detekt_version"
+    source = files("app/src/main/java", "app/src/main/kotlin")
+    parallel = false
+    config = files("config/detekt/detekt.yml")
+    buildUponDefaultConfig = true
+    autoCorrect = true
+
+    reports {
+        xml {
+            enabled = true
+            destination = file("app/build/detekt/detekt.xml")
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

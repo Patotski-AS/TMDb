@@ -1,0 +1,23 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/title_preference_sort">
+        <ListPreference
+            android:entries="@array/sort"
+            android:entryValues="@array/sort_values"
+            android:key="list_sort"
+            android:title="@string/title_parameters_sort"
+            app:defaultValue="popularity.desc"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/title_preference_theme">
+        <SwitchPreferenceCompat
+            android:id="@+id/theme"
+            android:summaryOff="@string/value_day_theme"
+            android:summaryOn="@string/value_night_theme"
+            app:key="theme"
+            app:title="@string/title_preference_theme" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

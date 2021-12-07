@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:strokeColor="@color/primaryColor">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/secondaryDarkColor">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewSmallPoster"
+            android:layout_width="wrap_content"
+            android:layout_height="220dp"
+            android:layout_margin="2dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/my_style_picture"
+            android:contentDescription="@string/movie_poster"
+            android:padding="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/text_view_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="2"
+            android:maxLines="2"
+            android:padding="2dp"
+            android:text="@string/default_text_title"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tv_value_release_date"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewSmallPoster"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/imageViewSmallPoster"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewSmallPoster"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="188dp" />
+
+        <TextView
+            android:id="@+id/tv_value_release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/default_text_date"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_value_genre"
+            app:layout_constraintEnd_toStartOf="@+id/tv_value_vote_average"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/imageViewSmallPoster"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_title"
+            tools:layout_editor_absoluteX="42dp"
+            tools:layout_editor_absoluteY="188dp" />
+
+        <TextView
+            android:id="@+id/tv_value_vote_average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/default_text_average"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_value_release_date"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewSmallPoster"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_value_release_date"
+            app:layout_constraintTop_toTopOf="@+id/tv_value_release_date"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="188dp" />
+
+        <TextView
+            android:id="@+id/tv_value_genre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_marginBottom="4dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/default_text_genre"
+            android:textAlignment="viewStart"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewSmallPoster"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/imageViewSmallPoster"
+            app:layout_constraintTop_toBottomOf="@+id/tv_value_release_date" />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/image_favorite"-->
+<!--            android:layout_width="45dp"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:src="@drawable/ic_baseline_star_rate_24_2"-->
+<!--            android:visibility="gone"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/imageViewSmallPoster"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/imageViewSmallPoster"  />-->
+
+        <ImageView
+            android:id="@+id/image_isFavorite"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_baseline_star_rate_24"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewSmallPoster"
+            app:layout_constraintTop_toTopOf="@+id/imageViewSmallPoster" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
