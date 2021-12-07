@@ -1,11 +1,11 @@
 <h1>TMDb</h1>
-------
+
 
 TMDb is a application to show list of movies on Android, built using Kotlin with Clean Architecture
 concepts
 
 ## Screenshots
-------
+
 <p>
 <img src="screenshots/5.png" width="24%" height="40%"/>
 <img src="screenshots/4.png" width="24%" height="40%"/>
@@ -16,7 +16,7 @@ concepts
 </p>
 
 ## Prerequisites
-------
+
 Add your [TMDB](https://www.themoviedb.org/) API key in the `local.properties` file:
 
 ```
@@ -24,7 +24,7 @@ api_key=YOUR_API_KEY
 ```
 
 ## Features
-------
+
 
 - Search for movies
 - View movie details like release date, rating, overview
@@ -33,14 +33,14 @@ api_key=YOUR_API_KEY
 - Works offline by caching data into a database.
 
 ## Architecture
-------
+
 
 <p>
 <img src="screenshots/clean.png" width="100%" height="100%"/>
 </p>
 
 ## Technologies
-------
+
 
 - [Kotlin](https://kotlinlang.org/) - %100 Kotlin
 - [View Binding](https://developer.android.com/topic/libraries/view-binding)
