@@ -2,7 +2,7 @@
 
 
 TMDb is a application to show list of movies on Android, built using Kotlin with Clean Architecture
-concepts
+concepts and MVVM with Flow
 
 ## Screenshots
 
@@ -47,7 +47,7 @@ api_key=YOUR_API_KEY
 - [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel)
 - [Paging 3](https://developer.android.com/topic/libraries/architecture/paging/v3-overview)
 - [Navigation](https://developer.android.com/guide/navigation)
-- [Coil](https://github.com/coil-kt/coil) for image loading
+- [Glide](https://github.com/bumptech/glide) for image loading
 - [Coroutines](https://github.com/Kotlin/kotlinx.coroutines) for asynchronous operations
 - [StateFlow](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-state-flow/)
 - [Dagger Hilt](https://developer.android.com/training/dependency-injection/hilt-android) for
